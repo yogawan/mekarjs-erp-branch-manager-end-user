@@ -85,9 +85,9 @@ export default function Sidebar() {
           lg:translate-x-0
         `}
       >
-        <h2 className="text-xl font-normal mb-6 mt-12 lg:mt-0">Menu</h2>
+        {/* <h2 className="text-xl font-normal mb-6 mt-12 lg:mt-0">Menu</h2> */}
 
-        <nav className="flex flex-col gap-2">
+        <nav className="mt-5 flex flex-col gap-2">
           {menuItems.map((item) => {
             const href = toHref(item.label);
             const isActive = pathname === href;
